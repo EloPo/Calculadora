@@ -1,0 +1,56 @@
+# <html>
+    <head>
+        <title> EXEMPLO DE uma calculadora </title>
+	 <script type="text/javascript" src="cal2.js"></script>        
+
+    </head>
+    <body>
+	<table name="tblCalc" border="1" >       
+		<form name="btns">
+			<tr >
+				<td> </td> 
+				<td> <input type="text" value="" name="textResult" style="width:70" >	</td>
+				<td> </td>	
+			</tr>
+
+			<tr>
+			 	<td> <input type="button" value="1" name="btn1" style="width:50" onclick="mostraValor(1)">
+				<td> <input type="button" value="2" name="btn2" style="width:70" onClick="mostraValor(2)">	</td>
+				<td> <input type="button" value="3" name="btn3" style="width:50" onClick="mostraValor(3)">	</td>	
+			</tr>
+
+			<tr>
+				<td> <input type="button" value="4" name="btn4" style="width:50" onClick="mostraValor(4)">	</td>
+				<td> <input type="button" value="5" name="btn5" style="width:70" onClick="mostraValor(5)">	</td>
+				<td> <input type="button" value="6" name="btn6" style="width:50" onClick="mostraValor(6)">	</td>	
+			</tr>
+
+			<tr>
+				<td> <input type="button" value="7" name="btn7" style="width:50" onClick="mostraValor(7)">	</td>
+				<td> <input type="button" value="8" name="btn8" style="width:70" onClick="mostraValor(8)">	</td>
+				<td> <input type="button" value="9" name="btn9" style="width:50" onClick="mostraValor(9)">	</td>	
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td> <input type="button" value="0" name="btn0" style="width:70" onClick="mostraValor(0)">	</td>
+				<td> </td>	
+			</tr>
+		
+			<tr>
+				<td> <input type="button" value="+" name="btnSoma" style="width:50" 	onclick="calc('soma')" >	</td>
+				<td> <input type="reset"  value="C"  name="btnReset" style="width:70"   onclick="mostraValor('limpa')" >	</td>	
+				<td> <input type="button" value="-"  name="btnSubtrai" style="width:50" onclick="calc('subtrai')">	</td>
+			</tr>
+
+			<tr>
+				<td> <input type="button" value="*" id="btnMultiplica" style="width:50" onclick="calc('multiplica')">	</td>
+				<td> <input type="button" value="=" id="btnResultado" style="width:70"  onclick="calc('resultado')"></td>
+				<td> <input type="button" value="/" id="btnDivide" style="width:50" 	onclick="calc('divide')">	</td>
+			</tr>
+		</form>	
+	</table>
+        <br />
+        <p id="resposta"> </p>                    
+    </body>
+</html>
